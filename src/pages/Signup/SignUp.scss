@@ -1,0 +1,41 @@
+@import "../../styles/styles.scss";
+
+.signup-page {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .signup-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .signup-form {
+    .form-group {
+      margin-bottom: 20px;
+
+      .form-label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 18px;
+        color: #333;
+      }
+
+      .form-input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #555;
+        background-color: #fff;
+      }
+    }
+
+    .submit-button {
+      @include button-styles;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../styles/styles.scss";
+
+.navBtn {
+  background-color: #142e54;
+  color: $text-color-button;
+  &:hover {
+    background-color: $primary-color-button-hover;
+  }
+}

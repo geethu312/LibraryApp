@@ -1,0 +1,20 @@
+$primary-color-button: #142e54;
+$primary-color-button-hover: #a7967e;
+$text-color-button: #ffffff;
+$bg-color-header-footer: #eae6df;
+
+// Reusable mixin to set button styles
+@mixin button-styles {
+  padding: 12px 24px;
+  background-color: $primary-color-button;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $primary-color-button-hover;
+  }
+}

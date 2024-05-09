@@ -1,0 +1,88 @@
+@import "./styles.scss";
+
+.add-book {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .desc {
+      height: 200px;
+    }
+
+    .desc textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      resize: vertical;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+    }
+  }
+
+  .form-group-inline {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input-group {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .input-group:last-child {
+    margin-right: 0;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      @include button-styles;
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    button:first-child {
+      @include button-styles;
+    }
+
+    button:last-child {
+      @include button-styles;
+    }
+  }
+}

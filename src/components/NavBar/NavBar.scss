@@ -1,0 +1,34 @@
+@import "../../styles/styles.scss";
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: black; /* Change to your desired text color on hover */
+  background-color: #f0f0f0; /* Change to your desired background color on hover */
+  /* Add any other styling you want for the hover effect */
+}
+
+.navbar {
+  background-color: $bg-color-header-footer !important;
+}
+
+.custom-navbar-bg {
+  background-color: #eae6df;
+}
+
+.btn {
+  @include button-styles;
+}
+
+.NavTitles {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.dropdown-header {
+  border-bottom: 1px solid #dee2e6; /* Add underline */
+  padding-bottom: 0.5rem; /* Adjust padding */
+  margin-bottom: 0.5rem; /* Adjust margin */
+}
+
+.navBtn {
+  @include button-styles;
+}

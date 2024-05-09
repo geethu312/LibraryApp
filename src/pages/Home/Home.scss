@@ -1,0 +1,134 @@
+@import "../../styles/styles.scss";
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.blog {
+  margin-top: 50px; /* Adjust top margin as needed */
+  padding: 20px; /* Add padding around the content */
+  background-color: #f9f9f9; /* Set background color */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.blog h2 {
+  text-align: center; /* Align the text to the center */
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-bottom: 30px; /* Add bottom margin */
+}
+
+.blog-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  justify-content: space-between; /* Align items horizontally with space between them */
+}
+
+.blog-post {
+  width: calc(
+    33.33% - 20px
+  ); /* Each blog post occupies one-third of the container width with spacing */
+  margin-bottom: 20px; /* Add bottom margin between blog posts */
+  border: 1px solid #ddd; /* Add border for separation */
+  border-radius: 5px; /* Add rounded corners */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.blog-post:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover for interaction */
+}
+
+.blog-image {
+  width: 100%; /* Make images responsive */
+  height: 200px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+.blog-text {
+  padding: 20px; /* Add padding around the text */
+}
+
+.blog-text h3 {
+  font-size: 1.2rem; /* Adjust heading font size */
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+.blog-text p {
+  font-size: 1rem; /* Adjust paragraph font size */
+  color: #555; /* Adjust text color */
+}
+
+.text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.introducing {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.title {
+  color: #007bff;
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.best-experience {
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.free-download {
+  color: #777;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.now-available {
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.footer-banner {
+  background-color: #eae6df4d;
+  padding: 20px 0;
+}
+
+.download-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-app-link,
+.apple-app-link {
+  margin: 0 10px;
+}
+
+.google-play,
+.app-store {
+  width: 150px;
+}
+
+.search-area {
+  margin-top: 20px;
+}
+
+.search-area button {
+  @include button-styles;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin-top: 8px;
+}
