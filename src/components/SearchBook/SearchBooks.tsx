@@ -47,6 +47,7 @@ const SearchBooks: React.FC = () => {
     contextObj.setBooks(updatedBooks);
     if (selectedBook && selectedBook.id === id) {
       setSelectedBook(null);
+      setFilteredBooks(updatedBooks);
     }
   };
 
